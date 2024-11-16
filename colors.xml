@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="instagram_startColor">#ffcb53</color>
+    <color name="active">#31FF3A</color>
+    <color name="instagram_middleColor">#E12160</color>
+    <color name="instagram_half_middleColor">#FF006D</color>
+    <color name="instagram_endColor">#3F5CC8</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#E4E4E4</color>
+    <color name="dark_light_grey">#D5D5D5</color>
+    <color name="more_light_grey">#F3F3F3</color>
+    <color name="darker_grey">#595858</color>
+    <color name="light_darker_grey">#B5B5B5</color>
+    <color name="light_black">#1E1E1E</color>
+    <color name="half_white">#80FFFFFF</color>
+    <color name="half_black">#80000000</color>
+    <color name="quarter_black">#41000000</color>
+    <color name="background">#FFFFFF</color>
+    <color name="white_tint">#FFFFFF</color>
+    <color name="text_tint">#1E1E1E</color>
+    <color name="bg_tint">#E4E4E4</color>
+    <color name="bg">#E4E4E4</color>
+</resources>

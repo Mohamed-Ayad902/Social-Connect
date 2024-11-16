@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Instagram" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/instagram_middleColor</item>
+        <item name="colorPrimaryVariant">@color/instagram_middleColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/darker_grey</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+    </style>
+
+    <style name="datepicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:focusedMonthDateColor">@color/instagram_startColor</item>
+        <item name="android:colorControlActivated">@color/instagram_startColor</item>
+        <item name="android:colorButtonNormal">@color/instagram_middleColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:colorPrimary">@color/instagram_startColor</item>
+        <item name="android:colorAccent">@color/instagram_endColor</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_to_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_to_bottom</item>
+    </style>
+
+</resources>
