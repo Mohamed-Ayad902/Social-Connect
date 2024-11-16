@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/storyDisplayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:surface_type="texture_view" />
+
+    <ImageView
+        android:id="@+id/storyDisplayImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <View
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/storyOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/background_black_gredient_stories"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.mayad.instagram.features.navigation.profile.user_stories.customview.StoriesProgressView
+            android:id="@+id/storiesProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/storyDisplayProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@+id/storiesProgressView">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/storyDisplayProfilePicture"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/mr_robot" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storyDisplayNick"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_tint"
+                    tools:text="username" />
+
+                <TextView
+                    android:id="@+id/storyDisplayTime"
+                    style="@style/SmallNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/more_light_grey"
+                    tools:text="just now" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/storyDisplayVideoProgress"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_btn_camera_rounded"
+            android:backgroundTint="@color/half_black"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:alpha="0.4"
+            android:background="@drawable/background_black_gredient"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_like"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:src="@drawable/un_liked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tint="@color/white_tint" />
+
+        <TextView
+            android:id="@+id/tv_likesCount"
+            style="@style/SmallNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_tint"
+            app:layout_constraintEnd_toEndOf="@id/btn_like"
+            app:layout_constraintStart_toStartOf="@id/btn_like"
+            app:layout_constraintTop_toBottomOf="@id/btn_like"
+            tools:text="425" />
+
+        <ImageView
+            android:id="@+id/iv_views"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/seen"
+            app:layout_constraintBottom_toTopOf="@+id/tv_seenCount"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:tint="@color/white_tint" />
+
+        <ImageView
+            android:id="@+id/btn_highlight"
+            android:layout_width="@dimen/_30sdp"
+            android:backgroundTint="@color/more_light_grey"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:tint="@color/black"
+            android:background="@drawable/background_btn_rounded_stroke"
+            android:src="@drawable/un_highlighted"
+            app:layout_constraintBottom_toTopOf="@+id/tv_seenCount"
+            app:layout_constraintStart_toStartOf="@+id/tv_caption"
+            app:layout_constraintTop_toTopOf="@+id/iv_views" />
+
+        <TextView
+            android:id="@+id/tv_seenCount"
+            style="@style/SmallNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textColor="@color/white_tint"
+            app:layout_constraintBottom_toTopOf="@+id/btn_like"
+            app:layout_constraintEnd_toEndOf="@id/btn_like"
+            app:layout_constraintStart_toStartOf="@id/btn_like"
+            tools:text="1,957" />
+
+        <TextView
+            android:id="@+id/tv_caption"
+            style="@style/SmallNormalText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:gravity="start"
+            android:textColor="@color/white_tint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_likesCount"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/dummy_post_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

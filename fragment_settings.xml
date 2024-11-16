@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_8sdp"
+    tools:context=".features.navigation.settings.ui.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_35sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                app:civ_border_color="@color/instagram_middleColor"
+                app:civ_border_width="@dimen/_2sdp"
+                tools:src="@drawable/mr_robot" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:text="Mohamed Ayad" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal"
+                    tools:text="mayad7474" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Account Settings Section -->
+        <TextView
+            style="@style/SmallNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/account_settings"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btn_changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/instagram_endColor"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/change_password"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/change_password" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:tint="@color/white_tint"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/teal_700"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/user"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/edit_profile" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                app:tint="@color/white_tint"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <!-- Privacy and Security Section -->
+        <TextView
+            style="@style/SmallNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/privacy_and_security"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btn_blockedUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/instagram_middleColor"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/block"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/blocked_accounts" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                app:tint="@color/white_tint"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <!-- Preferences Section -->
+        <TextView
+            style="@style/SmallNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/preferences"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/instagram_startColor"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/notification_bill"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/notifications" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/purple_200"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/change_language"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/language" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/teal_700"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/light_mode" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/dark_mode" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_dark_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Support Section -->
+        <TextView
+            style="@style/SmallNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/support"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btn_helpCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/teal_700"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/info"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/help_center" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_privacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/background_cornered_rectangel"
+                android:backgroundTint="@color/instagram_endColor"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/privacy"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/privacy_policy" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_navigate_next_24" />
+
+        </LinearLayout>
+
+        <!-- Account Management Section -->
+        <TextView
+            style="@style/SmallNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="@string/account_management"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:backgroundTint="@color/light_darker_grey"
+                android:background="@drawable/background_cornered_rectangel"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/logout"
+                app:tint="@color/white_tint" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/app_ver_1_0_0"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
