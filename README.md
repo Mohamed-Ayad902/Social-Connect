@@ -33,28 +33,16 @@
 ---
 
 ## 📸 App Screenshots  
-
-### Authentication Screens  
 ![1final](https://github.com/user-attachments/assets/2be41733-4919-4244-8545-cf02b04f1194)  
 ![2final](https://github.com/user-attachments/assets/4907f9cd-8f77-4028-a5d1-29ae2b35bbb8)  
-
-### Posts & Stories  
 ![3final](https://github.com/user-attachments/assets/41136ded-0dec-4c99-8fe1-d7fcc2c521d5)  
 ![4final](https://github.com/user-attachments/assets/b86aba04-6f90-4bdd-8525-f67dc8cbbff7)  
-
-### Messaging  
 ![5final](https://github.com/user-attachments/assets/b18bc6c1-df1b-4647-91de-0014efb7fe00)  
-![6final](https://github.com/user-attachments/assets/915490fe-e35a-47cd-806a-10ca98462b89)  
-
-### Social Interactions  
+![6final](https://github.com/user-attachments/assets/915490fe-e35a-47cd-806a-10ca98462b89)    
 ![7final](https://github.com/user-attachments/assets/faf364ba-9d0b-446a-ab77-9d447e4736e6)  
-![8final](https://github.com/user-attachments/assets/116443f4-1977-46f9-b43b-1c6e7f20e883)  
-
-### Customization  
+![8final](https://github.com/user-attachments/assets/116443f4-1977-46f9-b43b-1c6e7f20e883)    
 ![9final](https://github.com/user-attachments/assets/2e869244-13e2-414a-9280-bb3c37c9ebc2)  
 ![10final](https://github.com/user-attachments/assets/f35025ff-2c6a-4251-81cb-60b2ed52897d)  
-
-### Miscellaneous  
 ![11final](https://github.com/user-attachments/assets/23532bc2-c307-404a-8889-ea7c8d86c8db)  
 
 ---
